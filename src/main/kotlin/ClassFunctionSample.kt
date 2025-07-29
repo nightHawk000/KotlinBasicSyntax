@@ -1,3 +1,5 @@
+/*
+
 //first class
 
 class MyCalc { //Caps. Even Calc is OK
@@ -90,3 +92,5 @@ fun main() {
  println("I like ${myHobbyList.myHobbies.joinToString(", ")}.")
   
 }
+
+*/
