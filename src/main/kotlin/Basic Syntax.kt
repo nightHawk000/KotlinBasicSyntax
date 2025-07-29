@@ -1,7 +1,5 @@
 /* A) NOTES */
 
-//Test to commit to GitHub Repo 31.08.23..
-
 /* Syntax for Pulling from Remote GitHub Repository */
 
 // a) In command prompt, cd to Project Location in Local PC
@@ -339,6 +337,22 @@ fun main() {
         else->"Sorry, we cannot find $myInput in the list."
     }
     println(alphabetResult)
+
+    //a simpler way to get user input from a list
+    val myColors = mutableListOf("red", "green", "blue")
+
+    println("Choose from the list:")
+
+    val myUserInput = readlnOrNull()
+
+    if (myUserInput != null) {
+        val result = when (myUserInput.lowercase()) {
+            in myColors -> "you put ${myUserInput.lowercase()}!"
+            else -> "$myUserInput is not in the list!"
+        }
+        println(result)
+    }
+    else println("Invalid input!")
 
     //another simple when-else conditional
     println("Enter a planet name:")
@@ -1501,8 +1515,19 @@ fun main() {
             "They earn $${employee1.salary(45667.00)} per year.")
 
 
+    //Nested classes
 
+    //instantiate the outer class
+    val subaru = MyCars("Subaru", 1994, 'S')
 
+    //instantiate the inner class.
+    //note that it takes a dot notation from  the outer class
+    val owner1 = MyCars.CarsOwners("David", 35)
+
+    println("The car is a "+subaru.carName+" which was made in "
+            +subaru.carYearMade+" and its initial is "+subaru.carInitials+".")
+
+    println("This "+subaru.carName+" is owned by "+owner1.ownerName+", who is "+owner1.ownerAge+" years old.")
 
 
 //-------------END OF MAIN FUNCTION (T.Y. FOLKS :) )--------------------------------------------------------//
@@ -2078,8 +2103,23 @@ class DKEmployee (val gender:Char){
 
     }
 }
-
 //end class
 
+//nested classes
+//these are classes that are declared within another class.
+//by default, since the nested class is static,
+//one can access the nested class properties or variables with a dot(.) notation
+//without creating an object/instance of the class
+
+//note that a nested class can’t access the members of the outer class
+
+
+//outer class
+class MyCars (var carName: String, var carYearMade: Int, var carInitials: Char = '\u0000'){
+
+    //inner class
+    class CarsOwners(var ownerName: String, var ownerAge: Int)
+
+}
 
 
