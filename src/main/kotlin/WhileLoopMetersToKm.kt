@@ -1,3 +1,5 @@
+//pull this then delete
+
 fun main() {
     val meters = listOf(500, 5550, 350, 200, 660)
    
