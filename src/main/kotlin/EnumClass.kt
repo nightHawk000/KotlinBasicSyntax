@@ -1,3 +1,5 @@
+/*
+
 //an enum class is a special type of class that represents a fixed set of constants.
 //each constant in the enum class is an instance of the enum class and has a name and a value.
 //An enum class can have properties, just like any other class in Kotlin.
@@ -24,3 +26,5 @@ fun main(){
     println(person1.sex)
    
 }
+
+*/
