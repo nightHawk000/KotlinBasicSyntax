@@ -1,12 +1,12 @@
 enum class Car(val yearMade: Int, val topSpeed: Int){
-    SUBARUXR(1997, 235),
-    TOYOTA24(1986, 156),
-    PAGODAB23(2009, 350)
+    SUBARU_XR(1997, 235),
+    TOYOTA_24(1986, 156),
+    PAGODA_B23(2009, 350)
 
 }
 
 fun main (){
-    val myCar = Car.SUBARUXR
+    val myCar = Car.SUBARU_XR
 
     val carName = myCar.name
     val carIndex = myCar.ordinal

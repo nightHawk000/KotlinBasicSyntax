@@ -8,18 +8,25 @@ fun randomDay(): String {
 }
 
 fun fishFood(day: String): String {
-    if (day == "Monday") {
-        return "flakes"
-    } else if (day == "Wednesday") {
-        return "redworms"
-    } else if (day == "Thursday") {
-        return "granules"
-    } else if (day == "Friday") {
-        return "mosquitoes"
-    } else if (day == "Sunday") {
-        return "plankton"
-    } else {
-        return "nothing"
+    return when (day) {
+        "Monday" -> {
+            "flakes"
+        }
+        "Wednesday" -> {
+            "redworms"
+        }
+        "Thursday" -> {
+            "granules"
+        }
+        "Friday" -> {
+            "mosquitoes"
+        }
+        "Sunday" -> {
+            "plankton"
+        }
+        else -> {
+            "nothing"
+        }
     }
 }
 
@@ -29,4 +36,5 @@ fun main(){
     val food = fishFood(currentRandomDay)
     
     println ("Today is $currentRandomDay and the fish eat $food.")
+
 }

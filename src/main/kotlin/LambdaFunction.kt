@@ -14,6 +14,7 @@ fun main() {
     }
     
     val upperCase = lowerCase() //call the lowerCase lambda function
-    
+
     println(upperCase)
+
 }

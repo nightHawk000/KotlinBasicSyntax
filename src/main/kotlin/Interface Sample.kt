@@ -3,6 +3,7 @@
 //in other words, the class agrees to fulfill the contract defined by the interface.
 //Interfaces can't have any constructor logic or store any state.
 
+
 interface MyCar {
     fun drive() //note that interfaces in Kotlin cannot define default implementations for functions, so no println etc...
 }

@@ -4,7 +4,7 @@ fun main() {
     var index = 0
     
     while(index!= meters.size){
-        var kilometers = meters[index].toDouble()/1000
+        val kilometers = meters[index].toDouble()/1000
         
         println("${meters[index]} m is equal to $kilometers km.")
         index++

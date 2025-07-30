@@ -2,7 +2,6 @@ class Age (var myAge: Int, var name: String){
 
     //myAge = 6 //you cannot assign a value to a class property inside the class body, but you can do so inside a function or constructor.
 
-
 }
 
 fun main() {

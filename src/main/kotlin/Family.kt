@@ -2,7 +2,7 @@ class Family (val name: String, val age: Int) { //properties of the class itself
 
     companion object { //allows to access the variable directly from the class without creating an instance of the class
 
-    const val me: String = "David" //const is optional
+    const val ME: String = "David" //const is optional, note that constant variables are recommended to be in caps.
 }
 
 }
@@ -14,7 +14,7 @@ fun main(){
     val mother = Family("Mary", 50)
     val brother = Family("Dennis", 23)
 
-    val myself = Family.me //accessed directly being a companion object property
+    val myself = Family.ME//accessed directly being a companion object property
 
 
 

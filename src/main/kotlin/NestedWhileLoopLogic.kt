@@ -1,9 +1,9 @@
 fun main() {
-    var a:Int = 0
-    
+    var a = 0
+
     while(a<=2){
         
-        var b:Int = 0
+        var b = 0
         while(b<=2){
             print("Inner While Loop <-> ")
             b++
@@ -16,7 +16,7 @@ fun main() {
     }
 	
 	//second logic
-    var g:Int = -3
+    val g:Int = -3
     
     while(g<=2){
         

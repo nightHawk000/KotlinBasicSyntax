@@ -5,7 +5,6 @@ fun main() {
     alpha()
 }
 
-
 fun alpha() {
 //when conditional for a simple mutable list
     val alphabetList = mutableListOf("Ab", "B", "C", "D", "E")

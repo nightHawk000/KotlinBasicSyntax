@@ -32,7 +32,6 @@ class MyCalc { //Caps. Even Calc is OK
             quotient = num1.toDouble() / num2.toDouble()
         }
         return quotient
-   
     }
     
     companion object{ //this allows us not to have an instance of the class in the main function
@@ -45,9 +44,7 @@ class MyCalc { //Caps. Even Calc is OK
         
         return customName
     }
-    
-    }
-    
+  }
 }
 
 //second class
@@ -73,7 +70,7 @@ fun main() {
   var myDiff = myClass.subtract(5,6)
   var myQuotient = myClass.divide(5,6)
   
-  var myName = MyCalc.myName("David", "Maina") //calling a companion object from the main class doesn't need an instance of the class,
+  var myName = MyCalc.myName("David", "Night") //calling a companion object from the main class doesn't need an instance of the class,
                                               //and can just access the class directly
   
   println("The sum is: $mySum.")

@@ -5,6 +5,5 @@ fun main() {
     for (age in myAges){
         println("${age.key} : ${age.value}")
     }
-    
-    
+
 }

@@ -1,3 +1,4 @@
+
 class Area (private val length: Int, private val width: Int){ //private ensures that the parameters will only be accessed inside this class and not from other locations
     val area: Int
 

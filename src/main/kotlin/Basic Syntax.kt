@@ -1471,9 +1471,9 @@ fun main() {
     println(myBook.pages)
 
     //Person class
-    val person1 = Person("David", 25, "Male") //First instance of the class as needed
+    val person1 = Person("David", 25) //First instance of the class as needed
     //no default values
-    val person2 = Person("Carol", 21, "Male") //Second instance of class
+    val person2 = Person("Carol", 21) //Second instance of class
 
     //Hobbies Class
     val hobby1 = Hobbies("eating")
@@ -1956,7 +1956,7 @@ class Book { //name starts with an upper case letter
 //Example class MyClass (val a:Int, x:Int) .."x" is only a local variable,
 //unlike "a" which is a class property
 
-class Person (val name: String, val age: Int, string: String) //no default values set in the properties
+class Person(val name: String, val age: Int) //no default values set in the properties
 
 
 class Hobbies (val myHobby: String)

@@ -1,5 +1,6 @@
 //1. First Inheritance Class
 
+
 open class Superclass { //a class that is being inherited from is called a super class or parent class and is labelled as "open"
                         //its methods can be inherited by other classes if there is need to, with the ":" sign
 

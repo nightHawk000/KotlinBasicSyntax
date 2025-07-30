@@ -7,7 +7,7 @@ fun main() {
     
     println(myList)
     
-    var checkListElement = myList[2]
+    val checkListElement = myList[2]
     
     println(checkListElement)
     
